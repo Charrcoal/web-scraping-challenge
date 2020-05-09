@@ -79,7 +79,7 @@ def scrape_info():
     df = table[0]
     df.columns = ['Description', 'Values']
     df.set_index('Description', inplace = True)
-    html_table = df.to_html()
+    html_table = df.to_html(classes = "table table-striped")
 
     # print(df)
 
